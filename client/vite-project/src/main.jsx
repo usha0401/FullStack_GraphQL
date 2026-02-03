@@ -9,7 +9,7 @@ import { ApolloProvider } from "@apollo/client/react";
 // Apollo Client (v4 requires explicit link)
 const client = new ApolloClient({
   link: new HttpLink({
-    uri: "http://localhost:4000",
+    uri: "https://graphql-backend-8njz.onrender.com/",
   }),
   cache: new InMemoryCache(),
 });
