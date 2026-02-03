@@ -43,9 +43,8 @@ const resolvers = {
   },
 };
 
-// const server = new ApolloServer({ typeDefs, resolvers });
+const server = new ApolloServer({ typeDefs, resolvers });
 const PORT = process.env.PORT || 4000;
-
 
 const { url } = await startStandaloneServer(server, {
   listen: { port: PORT },
